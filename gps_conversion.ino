@@ -92,8 +92,7 @@ void converttoLat(){
     {
       lat_degree = nmea[2].substring(0, i - 2).toInt();
       lat_minute = nmea[2].substring(i - 2,i - 1).toInt();
-      lat_sec =nmea[2].substring(i+1).toInt(); 
-      lat_sec = lat_sec*10;
+      lat_sec =nmea[2].substring(i+1).toInt();
     }
   }
   
@@ -115,7 +114,6 @@ void converttoLon(){
       long_degree = nmea[4].substring(0, i - 2).toInt();
       long_minute = nmea[4].substring(i - 2,i - 1).toInt();
       long_sec =nmea[4].substring(i+1).toInt(); 
-      lat_sec = lat_sec*10;
     }
   }
 }
